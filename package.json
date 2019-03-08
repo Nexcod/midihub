@@ -1,0 +1,15 @@
+{
+  "name": "midihub",
+  "version": "0.1",
+  "description": "MidiHub - MIDI files for piano",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nexcod/midihub.git"
+  },
+  "author": "Danil Khismatulin <danil@khismatulin.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Nexcod/midihub#readme",
+  "dependencies": {
+    "spectre.css": "^0.5.8"
+  }
+}
