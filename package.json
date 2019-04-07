@@ -1,7 +1,13 @@
 {
   "name": "midihub",
-  "version": "0.1",
+  "version": "0.0.1",
+  "main": "frontend/style.scss",
   "description": "MidiHub - MIDI files for piano",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url --output-style=compressed frontend/style.scss frontend/build/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nexcod/midihub.git"
@@ -9,7 +15,9 @@
   "author": "Danil Khismatulin <danil@khismatulin.com>",
   "license": "MIT",
   "homepage": "https://github.com/Nexcod/midihub#readme",
-  "dependencies": {
-    "spectre.css": "^0.5.8"
+  "dependencies": {},
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "node-sass": "^4.11.0"
   }
 }
