@@ -4,4 +4,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='midi.index'),
+    path('view/', views.view, name='midi.view'),
 ]

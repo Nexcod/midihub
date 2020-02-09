@@ -9,3 +9,7 @@ def index(request):
     return render(request, 'midi/index.html', {
         'midi': midi,
     })
+
+
+def view(request):
+    return render(request, 'midi/view.html')
