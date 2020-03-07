@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
-from midi.models import Midi
+from app.models import Midi
 
 
 def index(request):

@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from midi.models import Midi
+from app.models import Midi
 
 
 class MidiModelTest(TestCase):
