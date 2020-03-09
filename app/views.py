@@ -6,7 +6,7 @@ from app.models import Midi
 def index(request):
     midi = Midi.objects.all()[:10]
 
-    return render(request, 'midi/index.html', {
+    return render(request, 'app/index.html', {
         'midi': midi,
     })
 
@@ -14,6 +14,6 @@ def index(request):
 def view(request, pk):
     midi = get_object_or_404(Midi, pk=pk)
 
-    return render(request, 'midi/view.html', {
+    return render(request, 'app/view.html', {
         'midi': midi,
     })

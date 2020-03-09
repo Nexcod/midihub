@@ -4,4 +4,4 @@ from django.test import TestCase
 class HomePageTest(TestCase):
     def test_uses_index_template(self):
         response = self.client.get('/')
-        self.assertTemplateUsed(response, 'midi/index.html')
+        self.assertTemplateUsed(response, 'app/index.html')
